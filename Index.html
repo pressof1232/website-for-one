@@ -34,11 +34,30 @@
             max-width: 520px;
             margin: 0 auto 40px;
         }
-        
-        .logo-container img {
+
+        .logo-frame {
+            display: inline-block;
+            border: 3px solid var(--orange);
+            border-radius: 22px;
+            padding: 10px;
+            box-shadow: 0 0 0 1px rgba(241,90,36,0.25), 0 20px 50px rgba(0,0,0,0.45), 0 0 30px rgba(241,90,36,0.2);
+            background: transparent;
+        }
+
+        .logo-inner {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 22px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-inner img {
             width: 100%;
+            max-width: 440px;
             height: auto;
-            filter: drop-shadow(0 15px 40px rgba(0,0,0,0.45));
+            display: block;
         }
         
         h1 {
@@ -209,10 +228,12 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="logo-container">
-            <!-- Замените на актуальную ссылку вашего логотипа -->
-            <img src="https://files.oaiusercontent.com/file-g1uXs?se=2026-03-27T23%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3Dlogo.png&sig=..." 
-                 alt="Auto Key Electrician - Professional Automotive Locksmith & Electrician in Phoenix, Arizona"
-                 width="520" height="auto">
+            <div class="logo-frame">
+                <div class="logo-inner">
+                    <img src="./logo.jpg" 
+                         alt="Auto Key Electrician - Professional Automotive Locksmith &amp; Electrician in Phoenix, Arizona">
+                </div>
+            </div>
         </div>
         
         <h1>
@@ -240,7 +261,7 @@
 
     <!-- Service Area -->
     <section class="service-area">
-        <p>We proudly serve: <span>Phoenix</span>, <span>Scottsdale</span>, <span>Glendale</span>, <span>Anthem</span>, <span>Cave Creek</span> &amp; the entire Valley of the Sun</p>
+        <p>We proudly serve: <span>Phoenix</span>, <span>Scottsdale</span>, <span>Glendale</span>, <span>Anthem</span>, <span>Cave Creek</span> &amp; the entire <span>Valley of the Sun</span></p>
     </section>
 
     <!-- Services -->
