@@ -31,14 +31,30 @@
         }
         
         .logo-container {
-            max-width: 520px;
+            max-width: 580px;
             margin: 0 auto 40px;
+            background: #0d2d4e;
+            border: 2px solid #c0622a;
+            border-radius: 22px;
+            padding: 18px;
+            box-shadow: 0 0 0 1px rgba(241,90,36,0.15),
+                        0 20px 55px rgba(0,0,0,0.55),
+                        0 0 40px rgba(241,90,36,0.12);
+        }
+        
+        .logo-frame {
+            background: #f0f2f5;
+            border-radius: 12px;
+            padding: 28px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .logo-container img {
             width: 100%;
             height: auto;
-            filter: drop-shadow(0 15px 40px rgba(0,0,0,0.45));
+            display: block;
         }
         
         h1 {
@@ -198,7 +214,8 @@
         @media (max-width: 768px) {
             .hero { padding: 80px 15px 65px; }
             .contact-box { padding: 35px 25px; }
-            .logo-container { max-width: 460px; }
+            .logo-container { max-width: 92%; padding: 14px; border-radius: 18px; }
+            .logo-frame { padding: 20px 20px; border-radius: 10px; }
             .contact-item.phone { font-size: 1.32rem; }
             .contact-item.email { font-size: 1.12rem; }
         }
@@ -209,10 +226,12 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="logo-container">
-            <!-- Замените на актуальную ссылку вашего логотипа -->
-            <img src="https://files.oaiusercontent.com/file-g1uXs?se=2026-03-27T23%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3Dlogo.png&sig=..." 
-                 alt="Auto Key Electrician - Professional Automotive Locksmith & Electrician in Phoenix, Arizona"
-                 width="520" height="auto">
+            <div class="logo-frame">
+                <!-- Замените на актуальную ссылку вашего логотипа -->
+                <img src="https://files.oaiusercontent.com/file-g1uXs?se=2026-03-27T23%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3Dlogo.png&sig=..." 
+                     alt="Auto Key Electrician - Professional Automotive Locksmith & Electrician in Phoenix, Arizona"
+                     width="520" height="auto">
+            </div>
         </div>
         
         <h1>
