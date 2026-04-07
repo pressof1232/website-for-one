@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fast, reliable automotive locksmith and electrician services in Phoenix, AZ. Car key making, programming, emergency unlocks, immobilizer repair & electrical diagnostics.">
+    <title>AUTO KEY ELECTRICIAN | Car Key & Automotive Electrical Services in Phoenix, AZ</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+        
+        :root {
+            --blue: #0a2540;
+            --orange: #f15a24;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.65;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0a2540 0%, #1e3a5f 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px 80px;
+        }
+        
+        .logo-container {
+            max-width: 520px;
+            margin: 0 auto 40px;
+        }
+        
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 15px 40px rgba(0,0,0,0.45));
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 7vw, 3.4rem);
+            font-weight: 700;
+            margin-bottom: 14px;
+            line-height: 1.1;
+        }
+        
+        .title-orange {
+            color: var(--orange);
+        }
+        
+        .subtitle {
+            font-size: clamp(1.2rem, 4vw, 1.35rem);
+            color: #a8c0e0;
+            margin-bottom: 40px;
+            font-weight: 500;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-box {
+            background: white;
+            color: #0a2540;
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 42px 32px;
+            border-radius: 20px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+        }
+        
+        .contact-item {
+            margin: 22px 0;
+            font-size: 1.32rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+        
+        .contact-item.phone {
+            font-size: 1.38rem;           /* телефон оставляем чуть крупнее */
+        }
+        
+        .contact-item.email {
+            font-size: 1.18rem;           /* email сделали заметно меньше */
+        }
+        
+        .contact-item a {
+            color: #0a2540;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            word-break: break-all;
+        }
+        
+        .contact-item a:hover {
+            color: var(--orange);
+            transform: translateX(6px);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--orange);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.12rem;
+            margin: 10px 6px;
+            box-shadow: 0 10px 25px rgba(241, 90, 36, 0.35);
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 38px rgba(241, 90, 36, 0.5);
+        }
+        
+        .btn-secondary {
+            background: var(--blue);
+        }
+        
+        .service-area {
+            background: #0a2540;
+            color: white;
+            padding: 32px 20px;
+            text-align: center;
+            font-size: 1.18rem;
+        }
+        
+        .service-area span {
+            color: var(--orange);
+            font-weight: 600;
+        }
+        
+        .services {
+            padding: 100px 20px;
+            background: white;
+            text-align: center;
+        }
+        
+        .services h2 {
+            color: var(--blue);
+            margin-bottom: 55px;
+            font-size: 2.45rem;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 34px;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: #f8f9fa;
+            padding: 42px 32px;
+            border-radius: 18px;
+            border: 2px solid #eee;
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            border-color: var(--orange);
+            transform: translateY(-14px);
+            box-shadow: 0 22px 45px rgba(0,0,0,0.12);
+        }
+        
+        .service-card h3 {
+            margin-bottom: 18px;
+            color: var(--blue);
+            font-size: 1.45rem;
+        }
+        
+        footer {
+            background: #0a2540;
+            color: #a8c0e0;
+            text-align: center;
+            padding: 65px 20px 45px;
+        }
+        
+        footer a {
+            color: #a8c0e0;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--orange);
+        }
+        
+        @media (max-width: 768px) {
+            .hero { padding: 80px 15px 65px; }
+            .contact-box { padding: 35px 25px; }
+            .logo-container { max-width: 460px; }
+            .contact-item.phone { font-size: 1.32rem; }
+            .contact-item.email { font-size: 1.12rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="logo-container">
+            <!-- Замените на актуальную ссылку вашего логотипа -->
+            <img src="https://files.oaiusercontent.com/file-g1uXs?se=2026-03-27T23%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3Dlogo.png&sig=..." 
+                 alt="Auto Key Electrician - Professional Automotive Locksmith & Electrician in Phoenix, Arizona"
+                 width="520" height="auto">
+        </div>
+        
+        <h1>
+            <span>AUTO KEY</span> 
+            <span class="title-orange">ELECTRICIAN</span>
+        </h1>
+        <p class="subtitle">Fast & Professional Car Key Making, Programming & Automotive Electrical Services in Phoenix, Arizona</p>
+        
+        <div class="contact-box">
+            <div class="contact-item phone">
+                📞 <strong>Phone:</strong> 
+                <a href="tel:+14805600635">(480) 560-0635</a>
+            </div>
+            <div class="contact-item email">
+                ✉️ <strong>Email:</strong> 
+                <a href="mailto:autokeyelectric@gmail.com">autokeyelectric@gmail.com</a>
+            </div>
+            
+            <div style="margin-top: 35px;">
+                <a href="tel:+14805600635" class="btn">Call Now for Fast Service</a>
+                <a href="mailto:autokeyelectric@gmail.com" class="btn btn-secondary">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="service-area">
+        <p>We proudly serve: <span>Phoenix</span>, <span>Scottsdale</span>, <span>Glendale</span>, <span>Anthem</span>, <span>Cave Creek</span> &amp; the entire Valley of the Sun</p>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <h2>Our Expert Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>🔑 Car Key Making &amp; Programming</h3>
+                <p>Transponder keys, chip keys, smart keys, key fobs, and keyless entry systems for all major makes and models.</p>
+            </div>
+            <div class="service-card">
+                <h3>⚡ Automotive Electrical &amp; Diagnostics</h3>
+                <p>Wiring repairs, control module issues, sensor diagnostics, battery systems, and full electrical troubleshooting.</p>
+            </div>
+            <div class="service-card">
+                <h3>🔓 Emergency Car Unlock / Lockout Service</h3>
+                <p>Fast, non-destructive unlocking for cars, trucks, and SUVs — available when you need it most.</p>
+            </div>
+            <div class="service-card">
+                <h3>🚗 Immobilizer &amp; ECU Services</h3>
+                <p>Immobilizer repair, ECU programming, reflashing, and advanced vehicle security system diagnostics.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>AUTO KEY ELECTRICIAN</strong> — Professional Automotive Locksmith &amp; Electrician in Phoenix, Arizona</p>
+        <p>Phone: <a href="tel:+14805600635">(480) 560-0635</a> | 
+           Email: <a href="mailto:autokeyelectric@gmail.com">autokeyelectric@gmail.com</a></p>
+        <p style="margin-top: 28px; opacity: 0.8; font-size: 0.95rem;">
+            Serving Phoenix, Scottsdale, Glendale, Anthem, Cave Creek &amp; the Valley of the Sun • © 2026 All Rights Reserved
+        </p>
+    </footer>
+
+</body>
+</html>
