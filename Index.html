@@ -30,15 +30,28 @@
             padding: 100px 20px 80px;
         }
         
-        .logo-container {
+        .logo-frame-outer {
             max-width: 520px;
             margin: 0 auto 40px;
+            border: 3px solid var(--orange);
+            border-radius: 22px;
+            padding: 14px;
+            box-shadow: 0 0 28px rgba(241, 90, 36, 0.5), 0 18px 50px rgba(0,0,0,0.45);
         }
-        
-        .logo-container img {
+
+        .logo-frame-inner {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 22px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-frame-inner img {
             width: 100%;
             height: auto;
-            filter: drop-shadow(0 15px 40px rgba(0,0,0,0.45));
+            display: block;
         }
         
         h1 {
@@ -198,7 +211,7 @@
         @media (max-width: 768px) {
             .hero { padding: 80px 15px 65px; }
             .contact-box { padding: 35px 25px; }
-            .logo-container { max-width: 460px; }
+            .logo-frame-outer { max-width: 460px; }
             .contact-item.phone { font-size: 1.32rem; }
             .contact-item.email { font-size: 1.12rem; }
         }
@@ -208,11 +221,12 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="logo-container">
-            <!-- Замените на актуальную ссылку вашего логотипа -->
-            <img src="https://github.com/user-attachments/assets/0395f0fa-b8ec-494e-87cd-ffa6a4798d06" 
-                 alt="Auto Key Electrician - Professional Automotive Locksmith & Electrician in Phoenix, Arizona"
-                 width="520" height="auto">
+        <div class="logo-frame-outer">
+            <div class="logo-frame-inner">
+                <img src="logo.jpg" 
+                     alt="Auto Key Electrician - Professional Automotive Locksmith & Electrician in Phoenix, Arizona"
+                     width="520" height="auto">
+            </div>
         </div>
         
         <h1>
@@ -240,7 +254,7 @@
 
     <!-- Service Area -->
     <section class="service-area">
-        <p>We proudly serve: <span>Phoenix</span>, <span>Scottsdale</span>, <span>Glendale</span>, <span>Anthem</span>, <span>Cave Creek</span> &amp; the entire Valley of the Sun</p>
+        <p>We proudly serve: <span>Phoenix</span>, <span>Scottsdale</span>, <span>Glendale</span>, <span>Anthem</span>, <span>Cave Creek</span> &amp; the entire <span>Valley of the Sun</span></p>
     </section>
 
     <!-- Services -->
